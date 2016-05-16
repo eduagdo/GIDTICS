@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<XMLDB PATH="local/GIDTICS/db" VERSION="20160511" COMMENT="tablas teachers connection"
+<XMLDB PATH="local/GID/db" VERSION="20160516" COMMENT="tablas teachers connection"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
 >
