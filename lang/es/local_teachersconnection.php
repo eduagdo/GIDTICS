@@ -24,3 +24,7 @@
 
 $string['pluginname'] = 'GIDTICS';
 $string['title'] = 'Conexion de profesores';
+$string['choose_subject'] = 'Elija ramo';
+$string['choose_curse'] = 'Elija curso';
+$string['search'] = 'Buscar';
+$string['choose_teacher'] = 'Elija Profesor';

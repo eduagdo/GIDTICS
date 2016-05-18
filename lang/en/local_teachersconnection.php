@@ -25,3 +25,7 @@
 
 $string['pluginname'] = 'GIDTICS';
 $string['title'] = 'Teachers Connection';
+$string['choose_subject'] = 'Choose subject';
+$string['choose_curse'] = 'Choose Curse';
+$string['search'] = 'Search';
+$string['choose_teacher'] = 'Choose Teacher';
