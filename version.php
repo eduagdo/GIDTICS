@@ -10,11 +10,16 @@
 */
 //Pertenece al plugin Teachers Connection
  
-
+/*
 defined('MOODLE_INTERNAL') || die();
 $plugin->pluginname = 'local_TeachersConnection';
 $plugin->component = 'local_TeachersConnection';
-$plugin->version   = 2016051600;
+$plugin->version   = 2016051600;*/
+
+defined('MOODLE_INTERNAL') || die();
+$plugin->version = 2016051100; // The current module version (Date: YYYYMMDDXX).
+$plugin->requires = 2013110500; // Requires this Moodle version.
+$plugin->component = 'local_TeachersConnection'; // To check on upgrade, that module sits in correct place.
 
 /*
 defined('MOODLE_INTERNAL') || die();
