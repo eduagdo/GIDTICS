@@ -25,7 +25,11 @@ class buscar_proyecto extends moodleform{
 		
 		//busca profesores existentes, **falta agregar if para profesores
 		$profesorarray = array();
-		$profesores = $DB->get_records('user');
+		//$profesores = $DB->get_records('user');
+		$profesores = $DB->get_records_sql("select u.id, u.firstname, u.lastname from `mdl_role` as r
+											inner join `mdl_role_assignments` as ra ON r.id = ra.roleid
+											inner join `mdl_user` as u ON ra.userid = u.id 
+											where r.id = 3 or r.id=4");
 		foreach ($profesores as $profesor){
 			//$nramos = $ramo -> id;
 			//$check = $nramos;
