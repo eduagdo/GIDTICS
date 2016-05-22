@@ -8,26 +8,18 @@ $context = context_system::instance ();
 $PAGE->set_context ( $context );
 $PAGE->set_url ( $baseurl );
 $PAGE->set_pagelayout ( 'standard' );
-$PAGE->set_title ( get_string ( 'title', 'local_teachersconnection' ) );
+$PAGE->set_title ( get_string ( 'pluginname', 'local_teachersconnection' ) );
 $PAGE->set_heading ( get_string ( 'title', 'local_teachersconnection' ) );
 $PAGE->navbar->add ( get_string ( 'title', 'local_teachersconnection' ) );
-// $PAGE->navbar->add('index','reservar.php');
-echo $OUTPUT->header (); // shows header
-                         // <link rel="stylesheet" href="css/style.css">
-echo $OUTPUT->heading ( get_string ( 'title', 'local_teachersconnection' ) );
+echo $OUTPUT->header ();
+echo $OUTPUT->heading ( get_string ( 'searcher', 'local_teachersconnection' ) );
 echo $USER->firstname . " " . $USER->lastname . "  -  " . $USER->email;
 echo "<br>";
-// test
-/*
- * $user = $DB->get_record('user', array('id'=>'2'));
- * foreach($user as $data){
- * echo $data . "<br>";
- * }
- */
-// $table = 'local_fitness';
+
 $email = $USER->email;
 
-$form_buscar = new buscar_proyecto ( null );
-echo $form_buscar->display ();
+//Display search form
+$form_search = new proyect_search ( null );
+echo $form_search->display ();
 
 echo $OUTPUT->footer (); //shows footer 
