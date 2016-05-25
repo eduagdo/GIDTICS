@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<XMLDB PATH="local/GID/db" VERSION="20160516" COMMENT="tablas teachers connection"
+<XMLDB PATH="local/GID/db" VERSION="2016051600" COMMENT="tablas teachers connection"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
 >
@@ -36,10 +36,13 @@
     <TABLE NAME="gid_publicacion" COMMENT="tabla para publicaciones">
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="user_id" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="nombre" TYPE="char" LENGTH="30" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="fecha_creacion" TYPE="char" LENGTH="20" NOTNULL="false" SEQUENCE="false" COMMENT="aquí se guarda la fecha de creación de la publicacion"/>
         <FIELD NAME="material_id" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="ramo_id" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="descripcion" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="clasificacion" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>

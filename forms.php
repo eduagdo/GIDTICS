@@ -2,7 +2,7 @@
 
 require_once(dirname(__FILE__) . '/../../config.php');
 require_once($CFG->libdir.'/formslib.php');
-require_once($CFG->dirroot.'/local/teachersconnection/tablas.php');
+require_once($CFG->dirroot.'/local/teachersconnection/tables.php');
 
 //use in index.php
 class proyect_search extends moodleform{
